@@ -361,18 +361,18 @@ body {
   fill: currentColor;
 }
 /* ----CLIENTS---- */
-.clients-list {
+.clients {
   display: flex;
 }
-.clients-item {
+.clients__item {
   display: flex;
   width: 170px;
   height: 92px;
 }
-.clients-item + .clients-item {
+.clients__item:not(:first-child) {
   margin-left: 30px;
 }
-.clients-link-icon {
+.clients__link {
   transition-property: border-color;
   transition-timing-function: var(--timing-function);
   transition-duration: var(--duration);
@@ -385,13 +385,13 @@ body {
   border-radius: 4px;
   color: var(--soc-link-color);
 }
-.clients-icon {
+.clients__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
-.clients-link-icon:hover,
-.clients-link-icon:focus {
+.clients__link:hover,
+.clients__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
