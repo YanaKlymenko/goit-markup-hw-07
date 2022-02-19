@@ -294,26 +294,26 @@ body {
 }
 
 /* ----TEAM---- */
-.team {
+.section--background {
   background-color: var(--background-second-color);
 }
-.team-list {
+.team {
   display: flex;
 }
-.team-item {
+.team__item {
   background: var(--white-color);
   flex-basis: calc((100% - 120px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
-.team-item-content {
+.team__content-wrapper {
   padding: 30px 32px;
 }
-.team-user {
+.team__user {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -321,24 +321,24 @@ body {
   color: var(--fist-text-color);
   margin-bottom: 10px;
 }
-.team-desc {
+.team__desc {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--second-text-color);
   margin-bottom: 16px;
 }
-.team-list-soc {
+.team-soc {
   display: flex;
 }
-.team-item-icon {
+.team-soc__item {
   width: 44px;
   height: 44px;
 }
-.team-item-icon + .team-item-icon {
+.team-soc__item:not(:first-child) {
   margin-left: 10px;
 }
-.team-link-icon {
+.team-soc__link {
   transition-property: background-color;
   transition-timing-function: var(--timing-function);
   transition-duration: var(--duration);
@@ -350,12 +350,12 @@ body {
   border-radius: 50%;
   color: var(--soc-link-color);
 }
-.team-link-icon:hover,
-.team-link-icon:focus {
+.team-soc__link:hover,
+.team-soc__link:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
-.team-icon {
+.team-soc__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
