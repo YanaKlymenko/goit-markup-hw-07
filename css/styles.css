@@ -81,11 +81,11 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header-wrap,
-.nav,
-.advant-list,
-.about-list,
-.team-list {
+.header__wrapper {
+  display: flex;
+}
+.nav {
+  align-items: center;
   display: flex;
 }
 .logo {
@@ -95,32 +95,29 @@ body {
   line-height: 1.19;
   color: var(--accent-color);
 }
-.nav {
-  align-items: center;
-}
-.nav-logo {
+
+.header__logo {
   margin-right: 93px;
 }
-.logo-header {
+.logo__studio {
   color: var(--fist-text-color);
-}
-.nav-link.current,
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
 }
 .nav-list {
   color: var(--fist-text-color);
   display: flex;
   align-items: center;
 }
-.nav-item + .nav-item {
+.nav-list__item:not(:first-child) {
   margin-left: 50px;
 }
-.header-item:not(:last-child) {
-  margin-right: 50px;
+
+.nav-list__link:hover,
+.nav-list__link:focus,
+.nav-list__item--current {
+  color: var(--accent-color);
 }
-.nav-link {
+
+.nav-list__link {
   position: relative;
   display: flex;
   align-items: center;
@@ -132,7 +129,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-link.current::after {
+.nav-list__link--current::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -142,15 +139,18 @@ body {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-.icon-header-contact {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.header-list {
+.header-contact {
   color: var(--second-text-color);
   display: flex;
   margin-left: auto;
   align-items: center;
+}
+.header-contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* ----HERO---- */
@@ -215,6 +215,12 @@ body {
 }
 
 /* ----ADVANT---- */
+.advant-list {
+  display: flex;
+}
+.about-list {
+  display: flex;
+}
 .advant-item:not(:last-child),
 .about-item:not(:last-child),
 .team-item:not(:last-child) {
@@ -286,6 +292,9 @@ body {
 /* ----TEAM---- */
 .team {
   background-color: var(--background-second-color);
+}
+.team-list {
+  display: flex;
 }
 .team-item {
   background: var(--white-color);
