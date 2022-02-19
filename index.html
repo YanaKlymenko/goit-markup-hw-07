@@ -471,73 +471,73 @@
     <!--Модальное окно-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="btn-modal-close" type="button" data-modal-close>
+        <button class="btn-close" type="button" data-modal-close>
           <svg width="18px" height="18px">
             <use href="./images/icons.svg#icon-btnclose"></use>
           </svg>
         </button>
         <form class="modal-form">
-          <p class="modal-form-title">
+          <p class="modal-form__title">
             Оставьте свои данные, мы вам перезвоним
           </p>
-          <label class="modal-label" for="username">Имя</label>
-          <div class="modal-form-wrap">
+          <label class="modal-form__label" for="username">Имя</label>
+          <div class="modal-form__wrapper">
             <input
-              class="modal-form-input"
+              class="modal-form__input"
               type="text"
               name="modal-form-name"
               id="username"
             />
-            <svg class="modal-form-icon">
+            <svg class="modal-form__icon">
               <use href="./images/icons.svg#icon-modalperson"></use>
             </svg>
           </div>
-          <label class="modal-label" for="userphone">Телефон</label>
-          <div class="modal-form-wrap">
+          <label class="modal-form__label" for="userphone">Телефон</label>
+          <div class="modal-form__wrapper">
             <input
-              class="modal-form-input"
+              class="modal-form__input"
               type="tel"
               name="modal-form-phone"
               id="userphone"
             />
-            <svg class="modal-form-icon">
+            <svg class="modal-form__icon">
               <use href="./images/icons.svg#icon-modalphone"></use>
             </svg>
           </div>
-          <label class="modal-label" for="useremail">Почта</label>
-          <div class="modal-form-wrap">
+          <label class="modal-form__label" for="useremail">Почта</label>
+          <div class="modal-form__wrapper">
             <input
-              class="modal-form-input"
+              class="modal-form__input"
               type="email"
               name="modal-form-email"
               id="useremail"
             />
-            <svg class="modal-form-icon">
+            <svg class="modal-form__icon">
               <use href="./images/icons.svg#icon-modalemail"></use>
             </svg>
           </div>
-          <label class="modal-label" for="usercomment">Комментарий</label>
+          <label class="modal-form__label" for="usercomment">Комментарий</label>
           <textarea
-            class="modal-form-textarea"
+            class="modal-form__textarea"
             name="modal-form-comment"
             id="usercomment"
             placeholder="Введите текст"
           ></textarea>
           <input
-            class="modal-form-check visually-hidden"
+            class="modal-form__check visually-hidden"
             type="checkbox"
             name="modal-form-check"
             id="usercheck"
           />
-          <label class="modal-text-terms text" for="usercheck">
-            <span class="modal-check-custom">
-              <svg class="modal-check-icon">
+          <label class="modal-form__text text" for="usercheck">
+            <span class="modal-form__check-custom">
+              <svg class="modal-form__check-icon">
                 <use href="./images/icons.svg#icon-modalcheck"></use>
               </svg>
             </span>
             <span
               >Соглашаюсь с рассылкой и принимаю
-              <a class="modal-check-terms" href="">Условия договора</a></span
+              <a class="modal-form__terms" href="">Условия договора</a></span
             >
           </label>
           <button class="btn-modal-submit btn" type="submit">Отправить</button>
